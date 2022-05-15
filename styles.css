@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e8e7e7;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  height: auto; /* The height needs to be reset to auto*/
+  width: 600px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.title,
+.footer {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rebeccapurple;
+  color: #fff;
+}
+/*=========
+ MAIN 
+ ==========*/
+.main {
+  flex: 5;
+  width: 100%;
+  height: 100%;
+  min-height: 50px;
+}
+.main .lists {
+  height: 100%;
+}
+.main .lists .listItems {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .lists .listItems .list {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(221, 220, 220);
+}
+.item {
+  border: none;
+  outline: none;
+}
+.btnEdit {
+  background: olivedrab;
+  color: #fff;
+  margin-right: 0.2rem;
+}
+.btnDelete {
+  background: rgb(177, 177, 5);
+  color: red;
+}
+.main .lists .listItems .list .buttons .btnEdit,
+.main .lists .listItems .list .buttons .btnDelete {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main .lists .listItems .list .buttons .btnEdit:hover,
+.main .lists .listItems .list .buttons .btnDelete:hover {
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+/*=========
+ FOOTER 
+ ==========*/
+
+.footer {
+  background: #eeeeee;
+  border: 2px solid rebeccapurple;
+}
+
+.footer .form {
+  width: 70%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .form input {
+  height: 100%;
+  width: 70%;
+  border: none;
+  outline: none;
+  background: rebeccapurple;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.footer .form .btn {
+  border: 1px solid green;
+  outline: none;
+  height: 100%;
+  width: 25%;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  background: green;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.footer .form .btn:hover {
+  background: none;
+  color: green;
+}
